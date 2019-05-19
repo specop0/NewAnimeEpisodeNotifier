@@ -1,0 +1,11 @@
+href=\"/(?'href'[\w-]*)\"
+"href" : "/\1"
+
+href=\"/(?'href'[\w-]*)\" title=\"(?'title'[\w: ]*)\"
+"href" : "/\1", "title" : "\2\"
+
+class=\"episode\">(?'episode'[\w ]*)<
+"episode" : "\1"
+
+href=\"/(?'href'[\w-]*)\" title=\"(?'title'[\w: &()]*)\"([^0]*)class=\"episode\">(?'episode'[\w ()]*)<([^0]*)
+"href" : "/\1",\r\n"title" : "\2\",\r\n"episode" : "\4"

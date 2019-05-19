@@ -1,0 +1,964 @@
+{
+    "$data": [
+        {
+            "name": "One Punch Man 2nd Season",
+            "id": 34134,
+            "url": "https://myanimelist.net/anime/34134/One_Punch_Man_2nd_Season"
+        },
+        {
+            "name": "Shingeki no Kyojin Season 3 Part 2",
+            "id": 38524,
+            "url": "https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2"
+        },
+        {
+            "name": "Kimetsu no Yaiba",
+            "id": 38000,
+            "url": "https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba"
+        },
+        {
+            "name": "Isekai Quartet",
+            "id": 38472,
+            "url": "https://myanimelist.net/anime/38472/Isekai_Quartet"
+        },
+        {
+            "name": "Fruits Basket (2019)",
+            "id": 38680,
+            "url": "https://myanimelist.net/anime/38680/Fruits_Basket_2019"
+        },
+        {
+            "name": "Kenja no Mago",
+            "id": 36407,
+            "url": "https://myanimelist.net/anime/36407/Kenja_no_Mago"
+        },
+        {
+            "name": "Bungou Stray Dogs 3rd Season",
+            "id": 38003,
+            "url": "https://myanimelist.net/anime/38003/Bungou_Stray_Dogs_3rd_Season"
+        },
+        {
+            "name": "Fairy Gone",
+            "id": 39063,
+            "url": "https://myanimelist.net/anime/39063/Fairy_Gone"
+        },
+        {
+            "name": "Sewayaki Kitsune no Senko-san",
+            "id": 38759,
+            "url": "https://myanimelist.net/anime/38759/Sewayaki_Kitsune_no_Senko-san"
+        },
+        {
+            "name": "Bokutachi wa Benkyou ga Dekinai",
+            "id": 38186,
+            "url": "https://myanimelist.net/anime/38186/Bokutachi_wa_Benkyou_ga_Dekinai"
+        },
+        {
+            "name": "Carole & Tuesday",
+            "id": 37435,
+            "url": "https://myanimelist.net/anime/37435/Carole___Tuesday"
+        },
+        {
+            "name": "Nande Koko ni Sensei ga!?",
+            "id": 38397,
+            "url": "https://myanimelist.net/anime/38397/Nande_Koko_ni_Sensei_ga"
+        },
+        {
+            "name": "Midara na Ao-chan wa Benkyou ga Dekinai",
+            "id": 38778,
+            "url": "https://myanimelist.net/anime/38778/Midara_na_Ao-chan_wa_Benkyou_ga_Dekinai"
+        },
+        {
+            "name": "Hitoribocchi no Marumaru Seikatsu",
+            "id": 37614,
+            "url": "https://myanimelist.net/anime/37614/Hitoribocchi_no_Marumaru_Seikatsu"
+        },
+        {
+            "name": "Senryuu Shoujo",
+            "id": 38787,
+            "url": "https://myanimelist.net/anime/38787/Senryuu_Shoujo"
+        },
+        {
+            "name": "Sarazanmai",
+            "id": 37426,
+            "url": "https://myanimelist.net/anime/37426/Sarazanmai"
+        },
+        {
+            "name": "Gunjou no Magmel",
+            "id": 37806,
+            "url": "https://myanimelist.net/anime/37806/Gunjou_no_Magmel"
+        },
+        {
+            "name": "Kono Oto Tomare!",
+            "id": 38080,
+            "url": "https://myanimelist.net/anime/38080/Kono_Oto_Tomare"
+        },
+        {
+            "name": "Shoumetsu Toshi",
+            "id": 37952,
+            "url": "https://myanimelist.net/anime/37952/Shoumetsu_Toshi"
+        },
+        {
+            "name": "Kono Yo no Hate de Koi wo Utau Shoujo YU-NO",
+            "id": 34620,
+            "url": "https://myanimelist.net/anime/34620/Kono_Yo_no_Hate_de_Koi_wo_Utau_Shoujo_YU-NO"
+        },
+        {
+            "name": "Nobunaga-sensei no Osanazuma",
+            "id": 38814,
+            "url": "https://myanimelist.net/anime/38814/Nobunaga-sensei_no_Osanazuma"
+        },
+        {
+            "name": "Joshikausei",
+            "id": 38295,
+            "url": "https://myanimelist.net/anime/38295/Joshikausei"
+        },
+        {
+            "name": "Mayonaka no Occult Koumuin",
+            "id": 37964,
+            "url": "https://myanimelist.net/anime/37964/Mayonaka_no_Occult_Koumuin"
+        },
+        {
+            "name": "Diamond no Ace: Act II",
+            "id": 38731,
+            "url": "https://myanimelist.net/anime/38731/Diamond_no_Ace__Act_II"
+        },
+        {
+            "name": "RobiHachi",
+            "id": 38707,
+            "url": "https://myanimelist.net/anime/38707/RobiHachi"
+        },
+        {
+            "name": "Araiya-san!: Ore to Aitsu ga Onnayu de!?",
+            "id": 39337,
+            "url": "https://myanimelist.net/anime/39337/Araiya-san__Ore_to_Aitsu_ga_Onnayu_de"
+        },
+        {
+            "name": "Hachigatsu no Cinderella Nine",
+            "id": 38091,
+            "url": "https://myanimelist.net/anime/38091/Hachigatsu_no_Cinderella_Nine"
+        },
+        {
+            "name": "Yatogame-chan Kansatsu Nikki",
+            "id": 37940,
+            "url": "https://myanimelist.net/anime/37940/Yatogame-chan_Kansatsu_Nikki"
+        },
+        {
+            "name": "Mix",
+            "id": 38098,
+            "url": "https://myanimelist.net/anime/38098/Mix"
+        },
+        {
+            "name": "Strike Witches: 501 Butai Hasshin Shimasu!",
+            "id": 38004,
+            "url": "https://myanimelist.net/anime/38004/Strike_Witches__501_Butai_Hasshin_Shimasu"
+        },
+        {
+            "name": "Choukadou Girl ⅙",
+            "id": 38226,
+            "url": "https://myanimelist.net/anime/38226/Choukadou_Girl_⅙"
+        },
+        {
+            "name": "Namu Amida Butsu!: Rendai Utena",
+            "id": 38150,
+            "url": "https://myanimelist.net/anime/38150/Namu_Amida_Butsu__Rendai_Utena"
+        },
+        {
+            "name": "Hangyakusei Million Arthur 2nd Season",
+            "id": 38268,
+            "url": "https://myanimelist.net/anime/38268/Hangyakusei_Million_Arthur_2nd_Season"
+        },
+        {
+            "name": "Bakumatsu: Crisis",
+            "id": 38860,
+            "url": "https://myanimelist.net/anime/38860/Bakumatsu__Crisis"
+        },
+        {
+            "name": "Cinderella Girls Gekijou: Climax Season",
+            "id": 38767,
+            "url": "https://myanimelist.net/anime/38767/Cinderella_Girls_Gekijou__Climax_Season"
+        },
+        {
+            "name": "Aikatsu Friends!: Kagayaki no Jewel",
+            "id": 39078,
+            "url": "https://myanimelist.net/anime/39078/Aikatsu_Friends__Kagayaki_no_Jewel"
+        },
+        {
+            "name": "Jimoto ga Japan",
+            "id": 38881,
+            "url": "https://myanimelist.net/anime/38881/Jimoto_ga_Japan"
+        },
+        {
+            "name": "Cinderella Girls Gekijou: Kayou Cinderella Theater 4th Season",
+            "id": 39654,
+            "url": "https://myanimelist.net/anime/39654/Cinderella_Girls_Gekijou__Kayou_Cinderella_Theater_4th_Season"
+        },
+        {
+            "name": "Cardfight!! Vanguard: Zoku Koukousei-hen",
+            "id": 39244,
+            "url": "https://myanimelist.net/anime/39244/Cardfight_Vanguard__Zoku_Koukousei-hen"
+        },
+        {
+            "name": "Beyblade Burst Gachi",
+            "id": 39282,
+            "url": "https://myanimelist.net/anime/39282/Beyblade_Burst_Gachi"
+        },
+        {
+            "name": "Kiratto Pri☆chan 2nd Season",
+            "id": 38804,
+            "url": "https://myanimelist.net/anime/38804/Kiratto_Pri☆chan_2nd_Season"
+        },
+        {
+            "name": "King of Prism: Shiny Seven Stars",
+            "id": 39699,
+            "url": "https://myanimelist.net/anime/39699/King_of_Prism__Shiny_Seven_Stars"
+        },
+        {
+            "name": "Duel Masters!!",
+            "id": 39039,
+            "url": "https://myanimelist.net/anime/39039/Duel_Masters"
+        },
+        {
+            "name": "Youkai Watch!",
+            "id": 39277,
+            "url": "https://myanimelist.net/anime/39277/Youkai_Watch"
+        },
+        {
+            "name": "TV Yarou Nanaana: Wakuwaku Doukutsu Land",
+            "id": 39581,
+            "url": "https://myanimelist.net/anime/39581/TV_Yarou_Nanaana__Wakuwaku_Doukutsu_Land"
+        },
+        {
+            "name": "Shounen Ashibe: Go! Go! Goma-chan 4",
+            "id": 39457,
+            "url": "https://myanimelist.net/anime/39457/Shounen_Ashibe__Go_Go_Goma-chan_4"
+        },
+        {
+            "name": "Watanuki-san Chi no",
+            "id": 39668,
+            "url": "https://myanimelist.net/anime/39668/Watanuki-san_Chi_no"
+        },
+        {
+            "name": "B Rappers Street",
+            "id": 39031,
+            "url": "https://myanimelist.net/anime/39031/B_Rappers_Street"
+        },
+        {
+            "name": "Kedama no Gonjirou",
+            "id": 39040,
+            "url": "https://myanimelist.net/anime/39040/Kedama_no_Gonjirou"
+        },
+        {
+            "name": "Neko no Nyagh: Nya Misérables",
+            "id": 38908,
+            "url": "https://myanimelist.net/anime/38908/Neko_no_Nyagh__Nya_Misérables"
+        },
+        {
+            "name": "Bakugan: Battle Planet",
+            "id": 39622,
+            "url": "https://myanimelist.net/anime/39622/Bakugan__Battle_Planet"
+        },
+        {
+            "name": "Zhu Zhu Xia: Konglong Riji",
+            "id": 39798,
+            "url": "https://myanimelist.net/anime/39798/Zhu_Zhu_Xia__Konglong_Riji"
+        },
+        {
+            "name": "Gifu no Tatekayoko",
+            "id": 39664,
+            "url": "https://myanimelist.net/anime/39664/Gifu_no_Tatekayoko"
+        },
+        {
+            "name": "One Piece",
+            "id": 21,
+            "url": "https://myanimelist.net/anime/21/One_Piece"
+        },
+        {
+            "name": "Black Clover",
+            "id": 34572,
+            "url": "https://myanimelist.net/anime/34572/Black_Clover"
+        },
+        {
+            "name": "Tate no Yuusha no Nariagari",
+            "id": 35790,
+            "url": "https://myanimelist.net/anime/35790/Tate_no_Yuusha_no_Nariagari"
+        },
+        {
+            "name": "Boruto: Naruto Next Generations",
+            "id": 34566,
+            "url": "https://myanimelist.net/anime/34566/Boruto__Naruto_Next_Generations"
+        },
+        {
+            "name": "Dororo",
+            "id": 37520,
+            "url": "https://myanimelist.net/anime/37520/Dororo"
+        },
+        {
+            "name": "Detective Conan",
+            "id": 235,
+            "url": "https://myanimelist.net/anime/235/Detective_Conan"
+        },
+        {
+            "name": "Fairy Tail: Final Series",
+            "id": 35972,
+            "url": "https://myanimelist.net/anime/35972/Fairy_Tail__Final_Series"
+        },
+        {
+            "name": "JoJo no Kimyou na Bouken Part 5: Ougon no Kaze",
+            "id": 37991,
+            "url": "https://myanimelist.net/anime/37991/JoJo_no_Kimyou_na_Bouken_Part_5__Ougon_no_Kaze"
+        },
+        {
+            "name": "Karakuri Circus",
+            "id": 37447,
+            "url": "https://myanimelist.net/anime/37447/Karakuri_Circus"
+        },
+        {
+            "name": "Crayon Shin-chan",
+            "id": 966,
+            "url": "https://myanimelist.net/anime/966/Crayon_Shin-chan"
+        },
+        {
+            "name": "Pokemon Sun & Moon",
+            "id": 34034,
+            "url": "https://myanimelist.net/anime/34034/Pokemon_Sun___Moon"
+        },
+        {
+            "name": "Gegege no Kitarou (2018)",
+            "id": 37140,
+            "url": "https://myanimelist.net/anime/37140/Gegege_no_Kitarou_2018"
+        },
+        {
+            "name": "Yu☆Gi☆Oh! VRAINS",
+            "id": 34866,
+            "url": "https://myanimelist.net/anime/34866/Yu☆Gi☆Oh_VRAINS"
+        },
+        {
+            "name": "Gudetama",
+            "id": 23539,
+            "url": "https://myanimelist.net/anime/23539/Gudetama"
+        },
+        {
+            "name": "Inazuma Eleven: Orion no Kokuin",
+            "id": 38235,
+            "url": "https://myanimelist.net/anime/38235/Inazuma_Eleven__Orion_no_Kokuin"
+        },
+        {
+            "name": "Doraemon (2005)",
+            "id": 8687,
+            "url": "https://myanimelist.net/anime/8687/Doraemon_2005"
+        },
+        {
+            "name": "Cardfight!! Vanguard (2018)",
+            "id": 37476,
+            "url": "https://myanimelist.net/anime/37476/Cardfight_Vanguard_2018"
+        },
+        {
+            "name": "Star☆Twinkle Precure",
+            "id": 38578,
+            "url": "https://myanimelist.net/anime/38578/Star☆Twinkle_Precure"
+        },
+        {
+            "name": "Zoids Wild",
+            "id": 37395,
+            "url": "https://myanimelist.net/anime/37395/Zoids_Wild"
+        },
+        {
+            "name": "Sazae-san",
+            "id": 2406,
+            "url": "https://myanimelist.net/anime/2406/Sazae-san"
+        },
+        {
+            "name": "Chibi Maruko-chan (1995)",
+            "id": 6149,
+            "url": "https://myanimelist.net/anime/6149/Chibi_Maruko-chan_1995"
+        },
+        {
+            "name": "Bonobono (2016)",
+            "id": 32353,
+            "url": "https://myanimelist.net/anime/32353/Bonobono_2016"
+        },
+        {
+            "name": "Shinkansen Henkei Robo Shinkalion The Animation",
+            "id": 36531,
+            "url": "https://myanimelist.net/anime/36531/Shinkansen_Henkei_Robo_Shinkalion_The_Animation"
+        },
+        {
+            "name": "Sore Ike! Anpanman",
+            "id": 1960,
+            "url": "https://myanimelist.net/anime/1960/Sore_Ike_Anpanman"
+        },
+        {
+            "name": "Ojarumaru",
+            "id": 4459,
+            "url": "https://myanimelist.net/anime/4459/Ojarumaru"
+        },
+        {
+            "name": "Dappys",
+            "id": 35516,
+            "url": "https://myanimelist.net/anime/35516/Dappys"
+        },
+        {
+            "name": "Yasamura Yasashi no Yasashii Sekai",
+            "id": 33933,
+            "url": "https://myanimelist.net/anime/33933/Yasamura_Yasashi_no_Yasashii_Sekai"
+        },
+        {
+            "name": "Yodel no Onna",
+            "id": 36409,
+            "url": "https://myanimelist.net/anime/36409/Yodel_no_Onna"
+        },
+        {
+            "name": "Disney Tsum Tsum",
+            "id": 28921,
+            "url": "https://myanimelist.net/anime/28921/Disney_Tsum_Tsum"
+        },
+        {
+            "name": "Puzzle & Dragon",
+            "id": 37096,
+            "url": "https://myanimelist.net/anime/37096/Puzzle___Dragon"
+        },
+        {
+            "name": "Neko Konogoro",
+            "id": 33398,
+            "url": "https://myanimelist.net/anime/33398/Neko_Konogoro"
+        },
+        {
+            "name": "Neko no Robu",
+            "id": 35478,
+            "url": "https://myanimelist.net/anime/35478/Neko_no_Robu"
+        },
+        {
+            "name": "Asa da yo! Kaishain",
+            "id": 33044,
+            "url": "https://myanimelist.net/anime/33044/Asa_da_yo_Kaishain"
+        },
+        {
+            "name": "Kamiusagi Rope: Warau Asa ni wa Fukuraitaru tte Maji ssuka!?",
+            "id": 30151,
+            "url": "https://myanimelist.net/anime/30151/Kamiusagi_Rope__Warau_Asa_ni_wa_Fukuraitaru_tte_Maji_ssuka"
+        },
+        {
+            "name": "Usagi no Matthew",
+            "id": 37467,
+            "url": "https://myanimelist.net/anime/37467/Usagi_no_Matthew"
+        },
+        {
+            "name": "Knyacki!",
+            "id": 7505,
+            "url": "https://myanimelist.net/anime/7505/Knyacki"
+        },
+        {
+            "name": "Neko to Mata",
+            "id": 35444,
+            "url": "https://myanimelist.net/anime/35444/Neko_to_Mata"
+        },
+        {
+            "name": "Nyanpuku Nyaruma",
+            "id": 24403,
+            "url": "https://myanimelist.net/anime/24403/Nyanpuku_Nyaruma"
+        },
+        {
+            "name": "Oshiri Tantei",
+            "id": 35656,
+            "url": "https://myanimelist.net/anime/35656/Oshiri_Tantei"
+        },
+        {
+            "name": "Shiawase Haitatsu Taneko",
+            "id": 10506,
+            "url": "https://myanimelist.net/anime/10506/Shiawase_Haitatsu_Taneko"
+        },
+        {
+            "name": "Hinomaru!",
+            "id": 36231,
+            "url": "https://myanimelist.net/anime/36231/Hinomaru"
+        },
+        {
+            "name": "Kirakira Happy★Hirake! Cocotama",
+            "id": 37968,
+            "url": "https://myanimelist.net/anime/37968/Kirakira_Happy★Hirake_Cocotama"
+        },
+        {
+            "name": "Hanakappa",
+            "id": 8336,
+            "url": "https://myanimelist.net/anime/8336/Hanakappa"
+        },
+        {
+            "name": "Aware! Meisaku-kun",
+            "id": 32956,
+            "url": "https://myanimelist.net/anime/32956/Aware_Meisaku-kun"
+        },
+        {
+            "name": "Kekkero Ke",
+            "id": 37359,
+            "url": "https://myanimelist.net/anime/37359/Kekkero_Ke"
+        },
+        {
+            "name": "Mannaka no Rikkun@Kin Tele",
+            "id": 37560,
+            "url": "https://myanimelist.net/anime/37560/Mannaka_no_RikkunKin_Tele"
+        },
+        {
+            "name": "Akita Kenritsu Iburi Gakkou Chuutou-bu",
+            "id": 35226,
+            "url": "https://myanimelist.net/anime/35226/Akita_Kenritsu_Iburi_Gakkou_Chuutou-bu"
+        },
+        {
+            "name": "Tama & Friends: Uchi no Tama Shirimasenka?",
+            "id": 32663,
+            "url": "https://myanimelist.net/anime/32663/Tama___Friends__Uchi_no_Tama_Shirimasenka"
+        },
+        {
+            "name": "Panda no Taputapu",
+            "id": 13463,
+            "url": "https://myanimelist.net/anime/13463/Panda_no_Taputapu"
+        },
+        {
+            "name": "Shimajirou no Wow!",
+            "id": 18941,
+            "url": "https://myanimelist.net/anime/18941/Shimajirou_no_Wow"
+        },
+        {
+            "name": "Tomodachi 8-nin",
+            "id": 13457,
+            "url": "https://myanimelist.net/anime/13457/Tomodachi_8-nin"
+        },
+        {
+            "name": "Gohan Kaijuu Pap",
+            "id": 22669,
+            "url": "https://myanimelist.net/anime/22669/Gohan_Kaijuu_Pap"
+        },
+        {
+            "name": "Mori no Ratio",
+            "id": 29427,
+            "url": "https://myanimelist.net/anime/29427/Mori_no_Ratio"
+        },
+        {
+            "name": "Pikachin-Kit",
+            "id": 36552,
+            "url": "https://myanimelist.net/anime/36552/Pikachin-Kit"
+        },
+        {
+            "name": "Kyou mo Tsuno ga Aru",
+            "id": 39003,
+            "url": "https://myanimelist.net/anime/39003/Kyou_mo_Tsuno_ga_Aru"
+        },
+        {
+            "name": "Straw Byururu",
+            "id": 29429,
+            "url": "https://myanimelist.net/anime/29429/Straw_Byururu"
+        },
+        {
+            "name": "Aigan Kaijuu",
+            "id": 38365,
+            "url": "https://myanimelist.net/anime/38365/Aigan_Kaijuu"
+        },
+        {
+            "name": "Yowamushi Monsters",
+            "id": 30119,
+            "url": "https://myanimelist.net/anime/30119/Yowamushi_Monsters"
+        },
+        {
+            "name": "Panpaka Pants O New-san",
+            "id": 35112,
+            "url": "https://myanimelist.net/anime/35112/Panpaka_Pants_O_New-san"
+        },
+        {
+            "name": "Eddie the Fast Break",
+            "id": 29431,
+            "url": "https://myanimelist.net/anime/29431/Eddie_the_Fast_Break"
+        },
+        {
+            "name": "Dragon Egg",
+            "id": 36740,
+            "url": "https://myanimelist.net/anime/36740/Dragon_Egg"
+        },
+        {
+            "name": "Mr. Shadow",
+            "id": 39029,
+            "url": "https://myanimelist.net/anime/39029/Mr_Shadow"
+        },
+        {
+            "name": "Robot Pulta",
+            "id": 29375,
+            "url": "https://myanimelist.net/anime/29375/Robot_Pulta"
+        },
+        {
+            "name": "Liv & Bell",
+            "id": 29421,
+            "url": "https://myanimelist.net/anime/29421/Liv___Bell"
+        },
+        {
+            "name": "Uchi no Oochopus",
+            "id": 37002,
+            "url": "https://myanimelist.net/anime/37002/Uchi_no_Oochopus"
+        },
+        {
+            "name": "Teach",
+            "id": 29425,
+            "url": "https://myanimelist.net/anime/29425/Teach"
+        },
+        {
+            "name": "Beads no Mori no Rabi",
+            "id": 35697,
+            "url": "https://myanimelist.net/anime/35697/Beads_no_Mori_no_Rabi"
+        },
+        {
+            "name": "Manul no Yuube",
+            "id": 38776,
+            "url": "https://myanimelist.net/anime/38776/Manul_no_Yuube"
+        },
+        {
+            "name": "Konigiri-kun",
+            "id": 35696,
+            "url": "https://myanimelist.net/anime/35696/Konigiri-kun"
+        },
+        {
+            "name": "Otoppe",
+            "id": 35372,
+            "url": "https://myanimelist.net/anime/35372/Otoppe"
+        },
+        {
+            "name": "Keito no Yousei: Knit to Wool",
+            "id": 35695,
+            "url": "https://myanimelist.net/anime/35695/Keito_no_Yousei__Knit_to_Wool"
+        },
+        {
+            "name": "Oidon to",
+            "id": 35698,
+            "url": "https://myanimelist.net/anime/35698/Oidon_to"
+        },
+        {
+            "name": "Fuwafuwa Hour: Pui Pui & Muu Muu",
+            "id": 36506,
+            "url": "https://myanimelist.net/anime/36506/Fuwafuwa_Hour__Pui_Pui___Muu_Muu"
+        },
+        {
+            "name": "Daifuku-kun@Kin Tele",
+            "id": 38427,
+            "url": "https://myanimelist.net/anime/38427/Daifuku-kunKin_Tele"
+        },
+        {
+            "name": "Mono-darake!",
+            "id": 35699,
+            "url": "https://myanimelist.net/anime/35699/Mono-darake"
+        },
+        {
+            "name": "Korogashi-ya no Pun",
+            "id": 35700,
+            "url": "https://myanimelist.net/anime/35700/Korogashi-ya_no_Pun"
+        },
+        {
+            "name": "Unicorn no Kyupi",
+            "id": 34990,
+            "url": "https://myanimelist.net/anime/34990/Unicorn_no_Kyupi"
+        },
+        {
+            "name": "Working Boys",
+            "id": 37343,
+            "url": "https://myanimelist.net/anime/37343/Working_Boys"
+        },
+        {
+            "name": "Ice Kuritarou",
+            "id": 37951,
+            "url": "https://myanimelist.net/anime/37951/Ice_Kuritarou"
+        },
+        {
+            "name": "Washimo 6th Season",
+            "id": 37630,
+            "url": "https://myanimelist.net/anime/37630/Washimo_6th_Season"
+        },
+        {
+            "name": "Zhu Zhu Xia: Jing Qiu Xiao Yingxiong",
+            "id": 38138,
+            "url": "https://myanimelist.net/anime/38138/Zhu_Zhu_Xia__Jing_Qiu_Xiao_Yingxiong"
+        },
+        {
+            "name": "Pakkororin",
+            "id": 38099,
+            "url": "https://myanimelist.net/anime/38099/Pakkororin"
+        },
+        {
+            "name": "Reizouko no Tsukenosuke!",
+            "id": 38451,
+            "url": "https://myanimelist.net/anime/38451/Reizouko_no_Tsukenosuke"
+        },
+        {
+            "name": "Kkoma Bus Tayo 5",
+            "id": 38631,
+            "url": "https://myanimelist.net/anime/38631/Kkoma_Bus_Tayo_5"
+        },
+        {
+            "name": "Capsule Boy 2: Ujuleul Jikyeola",
+            "id": 39012,
+            "url": "https://myanimelist.net/anime/39012/Capsule_Boy_2__Ujuleul_Jikyeola"
+        },
+        {
+            "name": "Chuldong! Super Wings 3",
+            "id": 39820,
+            "url": "https://myanimelist.net/anime/39820/Chuldong_Super_Wings_3"
+        },
+        {
+            "name": "Miru Tights",
+            "id": 38935,
+            "url": "https://myanimelist.net/anime/38935/Miru_Tights"
+        },
+        {
+            "name": "Ookami to Koushinryou VR",
+            "id": 38026,
+            "url": "https://myanimelist.net/anime/38026/Ookami_to_Koushinryou_VR"
+        },
+        {
+            "name": "7 Seeds",
+            "id": 38735,
+            "url": "https://myanimelist.net/anime/38735/7_Seeds"
+        },
+        {
+            "name": "Ultraman",
+            "id": 36871,
+            "url": "https://myanimelist.net/anime/36871/Ultraman"
+        },
+        {
+            "name": "Rilakkuma to Kaoru-san",
+            "id": 35777,
+            "url": "https://myanimelist.net/anime/35777/Rilakkuma_to_Kaoru-san"
+        },
+        {
+            "name": "Chokotto Anime Kemono Friends 3",
+            "id": 39653,
+            "url": "https://myanimelist.net/anime/39653/Chokotto_Anime_Kemono_Friends_3"
+        },
+        {
+            "name": "Doupo Cangqiong 2nd Season Specials",
+            "id": 39178,
+            "url": "https://myanimelist.net/anime/39178/Doupo_Cangqiong_2nd_Season_Specials"
+        },
+        {
+            "name": "Chikin Ramen x Gudetama",
+            "id": 39659,
+            "url": "https://myanimelist.net/anime/39659/Chikin_Ramen_x_Gudetama"
+        },
+        {
+            "name": "Hi no Tori \"Dougo Onsen-hen\"",
+            "id": 39663,
+            "url": "https://myanimelist.net/anime/39663/Hi_no_Tori_Dougo_Onsen-hen"
+        },
+        {
+            "name": "Essential Free & Easy Cool Wax Danshi",
+            "id": 39650,
+            "url": "https://myanimelist.net/anime/39650/Essential_Free___Easy_Cool_Wax_Danshi"
+        },
+        {
+            "name": "Ling Long: Incarnation",
+            "id": 39675,
+            "url": "https://myanimelist.net/anime/39675/Ling_Long__Incarnation"
+        },
+        {
+            "name": "Meichuxi De Yinyangshi Yijia",
+            "id": 39678,
+            "url": "https://myanimelist.net/anime/39678/Meichuxi_De_Yinyangshi_Yijia"
+        },
+        {
+            "name": "Qin Shi Ming Yue: Tian Xing Jiu Ge 2nd Season",
+            "id": 39823,
+            "url": "https://myanimelist.net/anime/39823/Qin_Shi_Ming_Yue__Tian_Xing_Jiu_Ge_2nd_Season"
+        },
+        {
+            "name": "Taka no Tsume-dan Yoshida Presents \"Sengoku Taiga\" no Susume",
+            "id": 39762,
+            "url": "https://myanimelist.net/anime/39762/Taka_no_Tsume-dan_Yoshida_Presents_Sengoku_Taiga_no_Susume"
+        },
+        {
+            "name": "Fate/Kaleid Liner Prisma☆Illya: Prisma☆Phantasm",
+            "id": 38897,
+            "url": "https://myanimelist.net/anime/38897/Fate_Kaleid_Liner_Prisma☆Illya__Prisma☆Phantasm"
+        },
+        {
+            "name": "Kyochuu Rettou",
+            "id": 38915,
+            "url": "https://myanimelist.net/anime/38915/Kyochuu_Rettou"
+        },
+        {
+            "name": "Bean Bandit",
+            "id": 37483,
+            "url": "https://myanimelist.net/anime/37483/Bean_Bandit"
+        },
+        {
+            "name": "Aikagi The Animation",
+            "id": 39085,
+            "url": "https://myanimelist.net/anime/39085/Aikagi_The_Animation"
+        },
+        {
+            "name": "Tsuma ga Kirei ni Natta Wake",
+            "id": 38798,
+            "url": "https://myanimelist.net/anime/38798/Tsuma_ga_Kirei_ni_Natta_Wake"
+        },
+        {
+            "name": "Ano Danchi no Tsuma-tachi wa... The Animation",
+            "id": 39068,
+            "url": "https://myanimelist.net/anime/39068/Ano_Danchi_no_Tsuma-tachi_wa_The_Animation"
+        },
+        {
+            "name": "Megane no Megami",
+            "id": 39058,
+            "url": "https://myanimelist.net/anime/39058/Megane_no_Megami"
+        },
+        {
+            "name": "Shoujo Kyouiku RE",
+            "id": 39299,
+            "url": "https://myanimelist.net/anime/39299/Shoujo_Kyouiku_RE"
+        },
+        {
+            "name": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+            "id": 38329,
+            "url": "https://myanimelist.net/anime/38329/Seishun_Buta_Yarou_wa_Yumemiru_Shoujo_no_Yume_wo_Minai"
+        },
+        {
+            "name": "Koutetsujou no Kabaneri Movie 3: Unato Kessen",
+            "id": 34544,
+            "url": "https://myanimelist.net/anime/34544/Koutetsujou_no_Kabaneri_Movie_3__Unato_Kessen"
+        },
+        {
+            "name": "Promare",
+            "id": 35848,
+            "url": "https://myanimelist.net/anime/35848/Promare"
+        },
+        {
+            "name": "Cencoroll 2",
+            "id": 9488,
+            "url": "https://myanimelist.net/anime/9488/Cencoroll_2"
+        },
+        {
+            "name": "Hibike! Euphonium Movie 3: Chikai no Finale",
+            "id": 35678,
+            "url": "https://myanimelist.net/anime/35678/Hibike_Euphonium_Movie_3__Chikai_no_Finale"
+        },
+        {
+            "name": "Kimi to, Nami ni Noretara",
+            "id": 38594,
+            "url": "https://myanimelist.net/anime/38594/Kimi_to_Nami_ni_Noretara"
+        },
+        {
+            "name": "Hakubo",
+            "id": 34972,
+            "url": "https://myanimelist.net/anime/34972/Hakubo"
+        },
+        {
+            "name": "Girls & Panzer: Saishuushou Part 2",
+            "id": 38081,
+            "url": "https://myanimelist.net/anime/38081/Girls___Panzer__Saishuushou_Part_2"
+        },
+        {
+            "name": "Kaijuu no Kodomo",
+            "id": 37981,
+            "url": "https://myanimelist.net/anime/37981/Kaijuu_no_Kodomo"
+        },
+        {
+            "name": "Birthday Wonderland",
+            "id": 38985,
+            "url": "https://myanimelist.net/anime/38985/Birthday_Wonderland"
+        },
+        {
+            "name": "Uta no☆Prince-sama♪ Maji Love Kingdom Movie",
+            "id": 35645,
+            "url": "https://myanimelist.net/anime/35645/Uta_no☆Prince-sama♪_Maji_Love_Kingdom_Movie"
+        },
+        {
+            "name": "Detective Conan Movie 23: The Fist of Blue Sapphire",
+            "id": 38770,
+            "url": "https://myanimelist.net/anime/38770/Detective_Conan_Movie_23__The_Fist_of_Blue_Sapphire"
+        },
+        {
+            "name": "Soukyuu no Fafner: Dead Aggressor - The Beyond",
+            "id": 34649,
+            "url": "https://myanimelist.net/anime/34649/Soukyuu_no_Fafner__Dead_Aggressor_-_The_Beyond"
+        },
+        {
+            "name": "Lupin the IIIrd: Mine Fujiko no Uso",
+            "id": 39487,
+            "url": "https://myanimelist.net/anime/39487/Lupin_the_IIIrd__Mine_Fujiko_no_Uso"
+        },
+        {
+            "name": "Frame Arms Girl Movie: Kyakkya Ufufu na Wonderland",
+            "id": 37600,
+            "url": "https://myanimelist.net/anime/37600/Frame_Arms_Girl_Movie__Kyakkya_Ufufu_na_Wonderland"
+        },
+        {
+            "name": "Ta ga Tame no Alchemist",
+            "id": 37262,
+            "url": "https://myanimelist.net/anime/37262/Ta_ga_Tame_no_Alchemist"
+        },
+        {
+            "name": "Laidbackers",
+            "id": 38558,
+            "url": "https://myanimelist.net/anime/38558/Laidbackers"
+        },
+        {
+            "name": "Pandora to Akubi",
+            "id": 39249,
+            "url": "https://myanimelist.net/anime/39249/Pandora_to_Akubi"
+        },
+        {
+            "name": "Tannishou wo Hiraku",
+            "id": 39479,
+            "url": "https://myanimelist.net/anime/39479/Tannishou_wo_Hiraku"
+        },
+        {
+            "name": "Crayon Shin-chan Movie 27: Shinkon Ryokou Hurricane - Ushinawareta Hiroshi",
+            "id": 38629,
+            "url": "https://myanimelist.net/anime/38629/Crayon_Shin-chan_Movie_27__Shinkon_Ryokou_Hurricane_-_Ushinawareta_Hiroshi"
+        },
+        {
+            "name": "King of Prism: Shiny Seven Stars III - Leo x Yuu x Alexander",
+            "id": 38647,
+            "url": "https://myanimelist.net/anime/38647/King_of_Prism__Shiny_Seven_Stars_III_-_Leo_x_Yuu_x_Alexander"
+        },
+        {
+            "name": "King of Prism: Shiny Seven Stars IV - Louis x Shin x Unknown",
+            "id": 38648,
+            "url": "https://myanimelist.net/anime/38648/King_of_Prism__Shiny_Seven_Stars_IV_-_Louis_x_Shin_x_Unknown"
+        },
+        {
+            "name": "Dayan to Tama to Tobi Neko to: 3-tsu no Neko no Monogatari",
+            "id": 39351,
+            "url": "https://myanimelist.net/anime/39351/Dayan_to_Tama_to_Tobi_Neko_to__3-tsu_no_Neko_no_Monogatari"
+        },
+        {
+            "name": "Sore Ike! Anpanman: Kirameke! Ice no Kuni no Vanilla-hime",
+            "id": 39002,
+            "url": "https://myanimelist.net/anime/39002/Sore_Ike_Anpanman__Kirameke_Ice_no_Kuni_no_Vanilla-hime"
+        },
+        {
+            "name": "One Punch Man 2nd Season Commemorative Special",
+            "id": 39652,
+            "url": "https://myanimelist.net/anime/39652/One_Punch_Man_2nd_Season_Commemorative_Special"
+        },
+        {
+            "name": "Poputepipikku Special",
+            "id": 37596,
+            "url": "https://myanimelist.net/anime/37596/Poputepipikku_Special"
+        },
+        {
+            "name": "Uchi no Maid ga Uzasugiru!: Uchi no Maid wa Yappari Mou Honto Uzainda naa...",
+            "id": 39606,
+            "url": "https://myanimelist.net/anime/39606/Uchi_no_Maid_ga_Uzasugiru__Uchi_no_Maid_wa_Yappari_Mou_Honto_Uzainda_naa"
+        },
+        {
+            "name": "Watashi ni Tenshi ga Maiorita! Special",
+            "id": 38999,
+            "url": "https://myanimelist.net/anime/38999/Watashi_ni_Tenshi_ga_Maiorita_Special"
+        },
+        {
+            "name": "Märchen Mädchen Specials",
+            "id": 37973,
+            "url": "https://myanimelist.net/anime/37973/Märchen_Mädchen_Specials"
+        },
+        {
+            "name": "Virtual-san wa Miteiru Specials",
+            "id": 38998,
+            "url": "https://myanimelist.net/anime/38998/Virtual-san_wa_Miteiru_Specials"
+        },
+        {
+            "name": "Genji Fantasy: Neko ga Hikaru Genji ni Koi wo Shita",
+            "id": 39272,
+            "url": "https://myanimelist.net/anime/39272/Genji_Fantasy__Neko_ga_Hikaru_Genji_ni_Koi_wo_Shita"
+        }
+    ]
+}
