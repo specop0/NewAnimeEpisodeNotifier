@@ -18,7 +18,7 @@ public class Reporter extends RestBase implements IReporter {
 
     @Override
     public void NotifyNewEpisodes(List<Episode> episodes) {
-        if (!episodes.isEmpty() && false) {
+        if (!episodes.isEmpty()) {
             JSONObject data = new JSONObject();
             data.put("subject", String.format("%d new episodes", episodes.size()));
 
