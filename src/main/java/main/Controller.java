@@ -3,6 +3,7 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import models.Episode;
 import restservices.ICache;
 import restservices.IReporter;
@@ -22,7 +23,8 @@ public class Controller {
 
     public void Start() {
         List<Episode> knownEpisodes = this.Cache.GetLastParsedEpisodes();
-        List<Episode> allNewEpisodes = new ArrayList<>();
+        List<Episode> allEpisodes = new ArrayList<>();
+        List<Episode> newEpisodes = new ArrayList<>();
 
         int knownEpisodesCount = 0;
         for (int i = 0; i < 10; i++) {
@@ -32,16 +34,29 @@ public class Controller {
             }
 
             List<Episode> foundEpisodes = this.EpisodesProvider.GetNextEpisodes();
-            List<Episode> newEpisodes = foundEpisodes.stream()
-                    .filter(x -> !knownEpisodes.contains(x))
-                    .collect(Collectors.toList());
-            allNewEpisodes.addAll(newEpisodes);
-
-            knownEpisodesCount += foundEpisodes.size() - newEpisodes.size();
 
             // no episodes found
-            if (newEpisodes.isEmpty()) {
+            if (foundEpisodes.isEmpty()) {
                 break;
+            }
+            allEpisodes.addAll(foundEpisodes);
+
+            // filter new episodes until all are known
+            for (int j = 0; j < foundEpisodes.size(); j++) {
+
+                // all known episodes were found
+                if (!knownEpisodes.isEmpty() && knownEpisodes.size() == knownEpisodesCount) {
+                    break;
+                }
+
+                Episode foundEpisode = foundEpisodes.get(j);
+
+                if (knownEpisodes.contains(foundEpisode)) {
+                    knownEpisodesCount++;
+                } else {
+                    newEpisodes.add(foundEpisode);
+                }
+
             }
 
             // all known episodes were found
@@ -50,18 +65,12 @@ public class Controller {
             }
         }
 
-        this.Reporter.NotifyNewEpisodes(allNewEpisodes);
+        this.Reporter.NotifyNewEpisodes(newEpisodes);
 
-        // save the last 20 elements to the cache
-        final int cacheSize = 20;
-        if (allNewEpisodes.size() < cacheSize) {
-            for (int i = 0; i < knownEpisodes.size() && allNewEpisodes.size() < cacheSize; i++) {
-                allNewEpisodes.add(knownEpisodes.get(i));
-            }
-        }
-
-        if (!allNewEpisodes.isEmpty()) {
-            this.Cache.SetLastParsedEpisodes(allNewEpisodes.subList(0, allNewEpisodes.size() < cacheSize ? allNewEpisodes.size() : cacheSize));
+        // save the last 20 latests episodes to the cache
+        List<Episode> latestEpisodes = Stream.concat(allEpisodes.stream(), knownEpisodes.stream()).limit(20).collect(Collectors.toList());
+        if (!latestEpisodes.isEmpty()) {
+            this.Cache.SetLastParsedEpisodes(latestEpisodes);
         }
     }
 }
