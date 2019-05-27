@@ -7,7 +7,7 @@ public class Episode {
 
     public Episode(String url, String name, String episode) {
         this.Url = url;
-        this.Name = name;
+        this.Name = name.replaceAll("[^\\x20-\\x7e]", "");
         this.Episode = episode;
     }
 
