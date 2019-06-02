@@ -17,20 +17,11 @@ public class Reporter extends RestBase implements IReporter {
     protected final String Url;
 
     @Override
-    public void NotifyNewEpisodes(List<Episode> episodes) {
-        if (!episodes.isEmpty()) {
+    public void Notify(String subject, String content) {
+        if (null != subject && null != content) {
             JSONObject data = new JSONObject();
-            data.put("subject", String.format("%d new episodes", episodes.size()));
-
-            StringBuilder content = new StringBuilder();
-            episodes.stream().forEach(x -> {
-                content.append(x.GetName());
-                content.append(System.lineSeparator());
-                content.append(x.GetEpisode());
-                content.append(System.lineSeparator());
-                content.append(System.lineSeparator());
-            });
-            data.put("content", content.toString());
+            data.put("subject", subject);
+            data.put("content", content);
 
             this.Do(this.Url, "POST", data);
         }

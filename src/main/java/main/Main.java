@@ -7,7 +7,9 @@ import restservices.IReporter;
 import restservices.Reporter;
 import restservices.RestCache;
 import webdriver.Gogoanime;
+import webdriver.IAnimesProvider;
 import webdriver.IEpisodesProvider;
+import webdriver.MyAnimeList;
 
 public class Main {
 
@@ -20,8 +22,10 @@ public class Main {
             IEpisodesProvider episodeProvider = new Gogoanime();
             JSONObject reporterConfiguration = configuration.getJSONObject("reporter");
             IReporter reporter = new Reporter(reporterConfiguration.getInt("port"));
+            IAnimesProvider animesProvider = new MyAnimeList("");
+            IReporterController reporterController = new ReporterController(cache, animesProvider, reporter);
 
-            Controller controller = new Controller(cache, episodeProvider, reporter);
+            Controller controller = new Controller(cache, episodeProvider, reporterController, animesProvider);
             controller.Start();
         } else {
             throw new IllegalArgumentException("No configuration file provided");

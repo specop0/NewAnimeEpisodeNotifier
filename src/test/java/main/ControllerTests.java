@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 import restservices.ICache;
-import restservices.IReporter;
+import webdriver.IAnimesProvider;
 import webdriver.IEpisodesProvider;
 
 public class ControllerTests {
@@ -19,15 +19,17 @@ public class ControllerTests {
     public void SetUp() {
         this.Cache = Mockito.mock(ICache.class);
         this.EpisodesProvider = Mockito.mock(IEpisodesProvider.class);
-        this.Reporter = Mockito.mock(IReporter.class);
+        this.Reporter = Mockito.mock(IReporterController.class);
+        this.AnimesProvider = Mockito.mock(IAnimesProvider.class);
 
-        this.Testee = new Controller(this.Cache, this.EpisodesProvider, this.Reporter);
+        this.Testee = new Controller(this.Cache, this.EpisodesProvider, this.Reporter, this.AnimesProvider);
     }
 
     protected Controller Testee;
     protected ICache Cache;
     protected IEpisodesProvider EpisodesProvider;
-    protected IReporter Reporter;
+    protected IReporterController Reporter;
+    protected IAnimesProvider AnimesProvider;
 
     protected List<Episode> CreateEpisodes(int length) {
         List<Episode> episodes = new ArrayList<>();

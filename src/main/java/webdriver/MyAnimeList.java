@@ -11,7 +11,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class MyAnimeList {
+public class MyAnimeList implements IAnimesProvider {
 
     public MyAnimeList(String user) {
         this(user, "https://myanimelist.net");
@@ -24,6 +24,7 @@ public class MyAnimeList {
     protected String BaseUrl;
     protected String User;
 
+    @Override
     public List<Anime> GetSeasonAnime() {
         try {
             Document doc = Jsoup.connect(this.GetSeasonAnimeUrl()).get();

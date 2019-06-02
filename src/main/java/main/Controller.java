@@ -6,20 +6,22 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import models.Episode;
 import restservices.ICache;
-import restservices.IReporter;
+import webdriver.IAnimesProvider;
 import webdriver.IEpisodesProvider;
 
 public class Controller {
 
-    public Controller(ICache cache, IEpisodesProvider episodesProvider, IReporter reporter) {
+    public Controller(ICache cache, IEpisodesProvider episodesProvider, IReporterController reporter, IAnimesProvider animesProvider) {
         this.Cache = cache;
         this.EpisodesProvider = episodesProvider;
         this.Reporter = reporter;
+        this.AnimesProvider = animesProvider;
     }
 
     protected ICache Cache;
     protected IEpisodesProvider EpisodesProvider;
-    protected IReporter Reporter;
+    protected IReporterController Reporter;
+    protected IAnimesProvider AnimesProvider;
 
     public void Start() {
         List<Episode> knownEpisodes = this.Cache.GetLastParsedEpisodes();
