@@ -68,7 +68,7 @@ public class ReporterController implements IReporterController {
         }
 
         List<Anime> seasonAnimes = this.Cache.GetSeasonAnimes();
-        if (seasonAnimes.isEmpty()) {
+        if (seasonAnimes.isEmpty() || !firstRun) {
             seasonAnimes = this.AnimesProvider.GetSeasonAnime();
             this.Cache.SetSeasonAnimes(seasonAnimes);
         }
@@ -87,7 +87,9 @@ public class ReporterController implements IReporterController {
 
         // check if amount of season animes is low and get new season animes
         int seasonAnimesCount = episodes.size() - episodesExceptSeasonAnimes.size();
-        if ((episodes.size() >= 5 && seasonAnimesCount == 0) || (episodes.size() >= 10 && seasonAnimesCount <= 1)) {
+        if ((episodes.size() >= 5 && seasonAnimesCount == 0)
+                || (episodes.size() >= 10 && seasonAnimesCount <= 1)
+                || episodes.size() > 2 * seasonAnimesCount && seasonAnimesCount >= 10) {
             return this.FilterSeasonAnimes(episodesExceptSeasonAnimes, false);
 
         }
