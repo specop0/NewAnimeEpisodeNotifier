@@ -1,9 +1,9 @@
 package main;
 
-import java.util.List;
+import java.util.Collection;
 import models.Episode;
 
 public interface IReporterController {
     
-    void NotifyNewEpisodes(List<Episode> episodes);
+    void NotifyNewEpisodes(Collection<Episode> episodes);
 }

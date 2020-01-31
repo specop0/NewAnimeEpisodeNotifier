@@ -1,7 +1,5 @@
 package restservices;
 
-import java.util.List;
-import models.Episode;
 import org.json.JSONObject;
 
 public class Reporter extends RestBase implements IReporter {

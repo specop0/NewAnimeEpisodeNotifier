@@ -1,6 +1,6 @@
 package main;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -25,8 +25,8 @@ public class Controller {
 
     public void Start() {
         List<Episode> knownEpisodes = this.Cache.GetLastParsedEpisodes();
-        List<Episode> allEpisodes = new ArrayList<>();
-        List<Episode> newEpisodes = new ArrayList<>();
+        HashSet<Episode> allEpisodes = new HashSet<>();
+        HashSet<Episode> newEpisodes = new HashSet<>();
 
         int knownEpisodesCount = 0;
         for (int i = 0; i < 10; i++) {
@@ -69,8 +69,11 @@ public class Controller {
 
         this.Reporter.NotifyNewEpisodes(newEpisodes);
 
-        // save the last 20 latests episodes to the cache
-        List<Episode> latestEpisodes = Stream.concat(allEpisodes.stream(), knownEpisodes.stream()).limit(20).collect(Collectors.toList());
+        // save the last 200 latests episodes to the cache
+        List<Episode> latestEpisodes = Stream.concat(allEpisodes.stream(), knownEpisodes.stream())
+                .distinct()
+                .limit(200)
+                .collect(Collectors.toList());
         if (!latestEpisodes.isEmpty()) {
             this.Cache.SetLastParsedEpisodes(latestEpisodes);
         }

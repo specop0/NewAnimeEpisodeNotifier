@@ -1,9 +1,8 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import models.Anime;
 import models.Episode;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -73,7 +72,7 @@ public class ReporterControllerTests {
         
         Mockito.when(this.AnimesProvider.GetSeasonAnime()).thenReturn(seasonAnimes);
         
-        List<Episode> actualEpisodes = this.Testee.FilterSeasonAnimes(episodes);
+        Collection<Episode> actualEpisodes = this.Testee.FilterSeasonAnimes(episodes);
         Assert.assertArrayEquals(expectedEpisodes.toArray(), actualEpisodes.toArray());
         
         Mockito.verify(this.Cache).SetSeasonAnimes(seasonAnimes);

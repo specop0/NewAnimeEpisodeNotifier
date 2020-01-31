@@ -1,5 +1,6 @@
 package main;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -22,9 +23,9 @@ public class ReporterController implements IReporterController {
     protected final IReporter Reporter;
 
     @Override
-    public void NotifyNewEpisodes(List<Episode> episodes) {
+    public void NotifyNewEpisodes(Collection<Episode> episodes) {
         if (!episodes.isEmpty()) {
-            List<Episode> newEpisodes = this.FilterSeasonAnimes(episodes);
+            Collection<Episode> newEpisodes = this.FilterSeasonAnimes(episodes);
             String subject = String.format("%d new episodes", newEpisodes.size());
 
             StringBuilder content = new StringBuilder();
@@ -36,7 +37,9 @@ public class ReporterController implements IReporterController {
                 content.append(System.lineSeparator());
             });
 
-            List<Episode> seasonAnimeEpisodes = episodes.stream().filter(x -> !newEpisodes.contains(x)).collect(Collectors.toList());
+            List<Episode> seasonAnimeEpisodes = episodes.stream()
+                    .filter(x -> !newEpisodes.contains(x))
+                    .collect(Collectors.toList());
             if (!seasonAnimeEpisodes.isEmpty()) {
                 content.append(System.lineSeparator());
                 content.append("============================================");
@@ -58,11 +61,11 @@ public class ReporterController implements IReporterController {
         }
     }
 
-    public List<Episode> FilterSeasonAnimes(List<Episode> episodes) {
+    public Collection<Episode> FilterSeasonAnimes(Collection<Episode> episodes) {
         return this.FilterSeasonAnimes(episodes, true);
     }
 
-    private List<Episode> FilterSeasonAnimes(List<Episode> episodes, boolean firstRun) {
+    private Collection<Episode> FilterSeasonAnimes(Collection<Episode> episodes, boolean firstRun) {
         if (episodes.isEmpty()) {
             return episodes;
         }
@@ -79,7 +82,9 @@ public class ReporterController implements IReporterController {
 
         Set<String> animeNames = seasonAnimes.stream().map(x -> x.GetName()).collect(Collectors.toSet());
 
-        List<Episode> episodesExceptSeasonAnimes = episodes.stream().filter(x -> !animeNames.contains(x.GetName())).collect(Collectors.toList());
+        List<Episode> episodesExceptSeasonAnimes = episodes.stream()
+                .filter(x -> !animeNames.contains(x.GetName()))
+                .collect(Collectors.toList());
 
         if (!firstRun) {
             return episodesExceptSeasonAnimes;
