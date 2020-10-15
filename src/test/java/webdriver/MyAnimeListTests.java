@@ -5,10 +5,17 @@ import java.util.List;
 import models.Anime;
 import models.File;
 import org.json.JSONObject;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class MyAnimeListTests {
+
+    @After
+    public void TearDown() {
+        spark.Spark.stop();
+        spark.Spark.awaitStop();
+    }
 
     @Test
     public void TestParsingSeasonAnime() {
@@ -51,8 +58,5 @@ public class MyAnimeListTests {
             Assert.assertEquals(expectedAnime, actualAnime);
             Assert.assertEquals(expectedAnime.toString(), actualAnime.toString());
         }
-
-        spark.Spark.stop();
-        spark.Spark.awaitStop();
     }
 }

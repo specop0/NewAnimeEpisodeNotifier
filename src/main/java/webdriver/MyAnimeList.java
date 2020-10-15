@@ -29,7 +29,7 @@ public class MyAnimeList implements IAnimesProvider {
         try {
             Document doc = Jsoup.connect(this.GetSeasonAnimeUrl()).get();
 
-            Elements animeTitles = doc.select(".title-text a");
+            Elements animeTitles = doc.select(".link-title");
 
             return animeTitles.stream()
                     .map(x -> this.ParseSeasonAnime(x))

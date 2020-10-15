@@ -1,2 +1,6 @@
 target/
 configuration.json
+
+.settings
+.project
+.classpath
