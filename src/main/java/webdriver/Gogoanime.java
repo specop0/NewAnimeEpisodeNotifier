@@ -13,7 +13,7 @@ import org.jsoup.nodes.Element;
 public class Gogoanime implements IEpisodesProvider {
 
     public Gogoanime() {
-        this("https://www3.gogoanime.io/?page=%d");
+        this("https://www.gogoanime.so/?page=%d");
     }
 
     public Gogoanime(String baseUrl) {
