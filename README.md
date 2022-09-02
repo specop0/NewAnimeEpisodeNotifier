@@ -6,7 +6,6 @@ cache entry is a [specop0/LocalRestServer](https://github.com/specop0/LocalRestS
 
 reporter entry is a [specop0/MailRestServer](https://github.com/specop0/MailRestServer)
 
-
 ```json
 {
     "cache" : {
