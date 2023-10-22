@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,7 +12,11 @@ import webdriver.IEpisodesProvider;
 
 public class Controller {
 
-    public Controller(ICache cache, IEpisodesProvider episodesProvider, IReporterController reporter, IAnimesProvider animesProvider) {
+    public Controller(
+            ICache cache,
+            IEpisodesProvider episodesProvider,
+            IReporterController reporter,
+            IAnimesProvider animesProvider) {
         this.Cache = cache;
         this.EpisodesProvider = episodesProvider;
         this.Reporter = reporter;
@@ -22,10 +27,12 @@ public class Controller {
     protected IEpisodesProvider EpisodesProvider;
     protected IReporterController Reporter;
     protected IAnimesProvider AnimesProvider;
+    public static final int CACHE_SIZE = 200;
 
     public void Start() {
         List<Episode> knownEpisodes = this.Cache.GetLastParsedEpisodes();
         HashSet<Episode> allEpisodes = new HashSet<>();
+        List<Episode> allEpisodesOrdered = new ArrayList<>();
         HashSet<Episode> newEpisodes = new HashSet<>();
 
         int knownEpisodesCount = 0;
@@ -41,7 +48,12 @@ public class Controller {
             if (foundEpisodes.isEmpty()) {
                 break;
             }
-            allEpisodes.addAll(foundEpisodes);
+
+            for (Episode episode : foundEpisodes) {
+                if (allEpisodes.add(episode)) {
+                    allEpisodesOrdered.add(episode);
+                }
+            }
 
             // filter new episodes until all are known
             for (int j = 0; j < foundEpisodes.size(); j++) {
@@ -70,9 +82,10 @@ public class Controller {
         this.Reporter.NotifyNewEpisodes(newEpisodes);
 
         // save the last 200 latests episodes to the cache
-        List<Episode> latestEpisodes = Stream.concat(allEpisodes.stream(), knownEpisodes.stream())
+        List<Episode> latestEpisodes = Stream
+                .concat(allEpisodesOrdered.stream(), knownEpisodes.stream())
                 .distinct()
-                .limit(200)
+                .limit(CACHE_SIZE)
                 .collect(Collectors.toList());
         if (!latestEpisodes.isEmpty()) {
             this.Cache.SetLastParsedEpisodes(latestEpisodes);

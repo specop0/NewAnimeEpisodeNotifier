@@ -49,7 +49,7 @@ public class ControllerTests {
         Mockito.when(this.EpisodesProvider.GetNextEpisodes()).thenReturn(emptyList);
         Mockito.when(this.EpisodesProvider.HasNextEpisodes()).thenReturn(true, true, false);
 
-        List<Episode> knownEpisodes = this.CreateEpisodes(30);
+        List<Episode> knownEpisodes = this.CreateEpisodes(Controller.CACHE_SIZE + 10);
         Mockito.when(this.Cache.GetLastParsedEpisodes()).thenReturn(knownEpisodes);
 
         this.Testee.Start();
@@ -58,7 +58,9 @@ public class ControllerTests {
         Mockito.verify(this.EpisodesProvider, Mockito.times(1)).GetNextEpisodes();
         Mockito.verifyNoMoreInteractions(this.EpisodesProvider);
 
-        List<Episode> thinnedKnownEpisodes = knownEpisodes.stream().limit(20).collect(Collectors.toList());
+        List<Episode> thinnedKnownEpisodes = knownEpisodes.stream()
+                .limit(Controller.CACHE_SIZE)
+                .collect(Collectors.toList());
         Mockito.verify(this.Reporter).NotifyNewEpisodes(Mockito.argThat(x -> x.isEmpty()));
 
         Mockito.verify(this.Cache).SetLastParsedEpisodes(thinnedKnownEpisodes);
@@ -66,8 +68,8 @@ public class ControllerTests {
 
     @Test
     public void TestNewEpisodes() {
-        List<Episode> providedEpisodesA = this.CreateEpisodes(20);
-        List<Episode> providedEpisodesB = this.CreateEpisodes(20);
+        List<Episode> providedEpisodesA = this.CreateEpisodes(Controller.CACHE_SIZE);
+        List<Episode> providedEpisodesB = this.CreateEpisodes(Controller.CACHE_SIZE);
         Mockito.when(this.EpisodesProvider.GetNextEpisodes()).thenReturn(providedEpisodesA, providedEpisodesB);
         Mockito.when(this.EpisodesProvider.HasNextEpisodes()).thenReturn(true, true, false);
 
@@ -80,20 +82,27 @@ public class ControllerTests {
         Mockito.verify(this.EpisodesProvider, Mockito.times(3)).HasNextEpisodes();
         Mockito.verifyNoMoreInteractions(this.EpisodesProvider);
 
-        List<Episode> allKnownEpisodes = Stream.concat(providedEpisodesA.stream(), providedEpisodesB.stream()).collect(Collectors.toList());
-        Mockito.verify(this.Reporter).NotifyNewEpisodes(allKnownEpisodes);
+        List<Episode> allKnownEpisodes = Stream
+                .concat(providedEpisodesA.stream(), providedEpisodesB.stream())
+                .collect(Collectors.toList());
+        Mockito.verify(this.Reporter).NotifyNewEpisodes(CollectionEquivalent.argThat(allKnownEpisodes));
 
         Mockito.verify(this.Cache).SetLastParsedEpisodes(providedEpisodesA);
     }
 
     @Test
     public void TestNewEpisodesOnTwoPages() {
-        List<Episode> providedEpisodesA = this.CreateEpisodes(20);
-        List<Episode> providedEpisodesB = this.CreateEpisodes(20);
-        Mockito.when(this.EpisodesProvider.GetNextEpisodes()).thenReturn(providedEpisodesA, providedEpisodesB, this.CreateEpisodes(20));
+        List<Episode> providedEpisodesA = this.CreateEpisodes(Controller.CACHE_SIZE);
+        List<Episode> providedEpisodesB = this.CreateEpisodes(Controller.CACHE_SIZE);
+        Mockito.when(this.EpisodesProvider.GetNextEpisodes()).thenReturn(
+                providedEpisodesA,
+                providedEpisodesB,
+                this.CreateEpisodes(20));
         Mockito.when(this.EpisodesProvider.HasNextEpisodes()).thenReturn(true);
 
-        List<Episode> knownEpisodes = Stream.concat(providedEpisodesA.stream().limit(10), providedEpisodesB.stream().limit(10)).collect(Collectors.toList());
+        List<Episode> knownEpisodes = Stream
+                .concat(providedEpisodesA.stream().limit(10), providedEpisodesB.stream().limit(10))
+                .collect(Collectors.toList());
         Mockito.when(this.Cache.GetLastParsedEpisodes()).thenReturn(knownEpisodes);
 
         this.Testee.Start();
@@ -103,20 +112,26 @@ public class ControllerTests {
         Mockito.verifyNoMoreInteractions(this.EpisodesProvider);
 
         List<Episode> newEpisodes = providedEpisodesA.stream().skip(10).collect(Collectors.toList());
-        Mockito.verify(this.Reporter).NotifyNewEpisodes(newEpisodes);
+        Mockito.verify(this.Reporter).NotifyNewEpisodes(CollectionEquivalent.argThat(newEpisodes));
 
         Mockito.verify(this.Cache).SetLastParsedEpisodes(providedEpisodesA);
     }
 
     @Test
     public void TestNewEpisodesOnThreePages() {
-        List<Episode> providedEpisodesA = this.CreateEpisodes(20);
-        List<Episode> providedEpisodesB = this.CreateEpisodes(20);
-        List<Episode> providedEpisodesC = this.CreateEpisodes(20);
-        Mockito.when(this.EpisodesProvider.GetNextEpisodes()).thenReturn(providedEpisodesA, providedEpisodesB, providedEpisodesC, this.CreateEpisodes(20));
+        List<Episode> providedEpisodesA = this.CreateEpisodes(Controller.CACHE_SIZE);
+        List<Episode> providedEpisodesB = this.CreateEpisodes(Controller.CACHE_SIZE);
+        List<Episode> providedEpisodesC = this.CreateEpisodes(Controller.CACHE_SIZE);
+        Mockito.when(this.EpisodesProvider.GetNextEpisodes()).thenReturn(
+                providedEpisodesA,
+                providedEpisodesB,
+                providedEpisodesC,
+                this.CreateEpisodes(20));
         Mockito.when(this.EpisodesProvider.HasNextEpisodes()).thenReturn(true);
 
-        List<Episode> knownEpisodes = Stream.concat(providedEpisodesA.stream().skip(10), providedEpisodesC.stream().skip(10)).collect(Collectors.toList());
+        List<Episode> knownEpisodes = Stream
+                .concat(providedEpisodesA.stream().skip(10), providedEpisodesC.stream().skip(10))
+                .collect(Collectors.toList());
         Mockito.when(this.Cache.GetLastParsedEpisodes()).thenReturn(knownEpisodes);
 
         this.Testee.Start();
@@ -129,22 +144,24 @@ public class ControllerTests {
                 Stream.concat(providedEpisodesA.stream(), providedEpisodesB.stream()),
                 providedEpisodesC.stream())
                 .collect(Collectors.toList());
-        List<Episode> newEpisodes = allProvidedEpisodes.stream().filter(x -> !knownEpisodes.contains(x)).collect(Collectors.toList());
-        Mockito.verify(this.Reporter).NotifyNewEpisodes(newEpisodes);
+        List<Episode> newEpisodes = allProvidedEpisodes.stream()
+                .filter(x -> !knownEpisodes.contains(x))
+                .collect(Collectors.toList());
+        Mockito.verify(this.Reporter).NotifyNewEpisodes(CollectionEquivalent.argThat(newEpisodes));
 
         Mockito.verify(this.Cache).SetLastParsedEpisodes(providedEpisodesA);
     }
 
     @Test
     public void TestNewEpisodesAbortsAtKnownEpisodesReached() {
-        List<Episode> providedEpisodes = this.CreateEpisodes(40);
+        List<Episode> providedEpisodes = this.CreateEpisodes(Controller.CACHE_SIZE * 2);
         Mockito.when(this.EpisodesProvider.GetNextEpisodes()).thenReturn(providedEpisodes);
         Mockito.when(this.EpisodesProvider.HasNextEpisodes()).thenReturn(true);
 
         List<Episode> newEpisodes = new ArrayList<>();
         List<Episode> knownEpisodes = new ArrayList<>();
         List<Episode> allEpisodes = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < Controller.CACHE_SIZE; i++) {
             Episode episode = providedEpisodes.get(i);
             if (i % 2 == 0) {
                 newEpisodes.add(episode);
@@ -161,7 +178,7 @@ public class ControllerTests {
         Mockito.verify(this.EpisodesProvider, Mockito.times(1)).HasNextEpisodes();
         Mockito.verifyNoMoreInteractions(this.EpisodesProvider);
 
-        Mockito.verify(this.Reporter).NotifyNewEpisodes(newEpisodes);
+        Mockito.verify(this.Reporter).NotifyNewEpisodes(CollectionEquivalent.argThat(newEpisodes));
         Mockito.verify(this.Cache).SetLastParsedEpisodes(allEpisodes);
     }
 }
