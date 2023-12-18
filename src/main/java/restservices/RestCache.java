@@ -10,8 +10,8 @@ import org.json.JSONObject;
 
 public class RestCache extends RestBase implements ICache {
 
-    public RestCache(int port, String authorization) {
-        this(String.format("http://localhost:%d/data/%s", port, authorization));
+    public RestCache(String ipAddress, int port, String authorization) {
+        this(String.format("http://%s:%d/data/%s", ipAddress, port, authorization));
     }
 
     public RestCache(String baseUrl) {

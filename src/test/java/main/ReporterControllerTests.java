@@ -69,12 +69,12 @@ public class ReporterControllerTests {
                     RandomStringUtils.randomAlphabetic(10));
             episodes.add(matchingEpisode);
         }
-        
+
         Mockito.when(this.AnimesProvider.GetSeasonAnime()).thenReturn(seasonAnimes);
-        
+
         Collection<Episode> actualEpisodes = this.Testee.FilterSeasonAnimes(episodes);
         Assert.assertArrayEquals(expectedEpisodes.toArray(), actualEpisodes.toArray());
-        
+
         Mockito.verify(this.Cache).SetSeasonAnimes(seasonAnimes);
     }
 }

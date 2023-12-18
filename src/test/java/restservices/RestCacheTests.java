@@ -1,6 +1,5 @@
 package restservices;
 
-import restservices.RestCache;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -77,7 +76,9 @@ public class RestCacheTests {
             expectedEpisodes.add(expectedEpisode);
         }
         this.Testee.SetLastParsedEpisodes(expectedEpisodes);
-        Assert.assertArrayEquals(new String[]{RestCache.KEY_LAST_PARSED_EPISODES}, this.SavedData.keySet().toArray());
+        Assert.assertArrayEquals(
+                new String[] { RestCache.KEY_LAST_PARSED_EPISODES },
+                this.SavedData.keySet().toArray());
 
         // get
         actualEpisodes = this.Testee.GetLastParsedEpisodes();
@@ -110,7 +111,7 @@ public class RestCacheTests {
             expectedItems.add(expectedItem);
         }
         this.Testee.SetSeasonAnimes(expectedItems);
-        Assert.assertArrayEquals(new String[]{RestCache.KEY_SEASON_ANIMES}, this.SavedData.keySet().toArray());
+        Assert.assertArrayEquals(new String[] { RestCache.KEY_SEASON_ANIMES }, this.SavedData.keySet().toArray());
 
         // get
         actualItems = this.Testee.GetSeasonAnimes();

@@ -1,0 +1,13 @@
+{
+    "dockerComposeFile": "compose.yml",
+    "service": "newanimeeposidenotifier",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "humao.rest-client"
+            ]
+        }
+    }
+}

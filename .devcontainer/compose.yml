@@ -1,0 +1,19 @@
+services:
+  newanimeeposidenotifier:
+    build:
+      context: .
+    volumes:
+      - ../..:/workspaces:cached
+      - ../mnt:/mnt
+    command: sleep infinity
+    networks:
+      - localrestserver
+      - mailrestserver
+
+networks:
+  localrestserver:
+    name: localrestserver
+    external: true
+  mailrestserver:
+    name: mailrestserver
+    external: true

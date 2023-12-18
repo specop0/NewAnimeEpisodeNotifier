@@ -47,7 +47,7 @@ public class ReporterController implements IReporterController {
                 content.append(String.format("Season animes: %d new epsiodes", seasonAnimeEpisodes.size()));
                 content.append(System.lineSeparator());
                 content.append(System.lineSeparator());
-                
+
                 seasonAnimeEpisodes.stream().forEach(x -> {
                     content.append(x.GetName());
                     content.append(System.lineSeparator());

@@ -9,8 +9,8 @@ public interface ICache {
     void SetLastParsedEpisodes(List<Episode> episodes);
 
     List<Episode> GetLastParsedEpisodes();
-    
+
     void SetSeasonAnimes(List<Anime> animes);
-    
+
     List<Anime> GetSeasonAnimes();
 }

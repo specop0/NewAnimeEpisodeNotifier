@@ -8,12 +8,14 @@ reporter entry is a [specop0/MailRestServer](https://github.com/specop0/MailRest
 
 ```json
 {
-    "cache" : {
-        "port" : 6491,
-        "authorization" : "secret of LocalRestServer"
+    "cache": {
+        "ipAddress": "localrestserver",
+        "port": 6491,
+        "authorization": "secret of LocalRestServer"
     },
-    "reporter" : {
-        "port" : 6897
+    "reporter": {
+        "ipAddress": "mailrestserver",
+        "port": 6897
     }
 }
 ```

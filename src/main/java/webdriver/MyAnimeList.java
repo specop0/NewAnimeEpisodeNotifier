@@ -13,16 +13,15 @@ import org.jsoup.select.Elements;
 
 public class MyAnimeList implements IAnimesProvider {
 
-    public MyAnimeList(String user) {
-        this(user, "https://myanimelist.net");
+    public MyAnimeList() {
+        this("https://myanimelist.net");
     }
 
-    public MyAnimeList(String user, String baseUrl) {
+    public MyAnimeList(String baseUrl) {
         this.BaseUrl = baseUrl;
     }
 
     protected String BaseUrl;
-    protected String User;
 
     @Override
     public List<Anime> GetSeasonAnime() {
@@ -52,9 +51,5 @@ public class MyAnimeList implements IAnimesProvider {
 
     protected String GetSeasonAnimeUrl() {
         return String.format("%s/anime/season", this.BaseUrl);
-    }
-
-    protected String GetAnimeListUrl() {
-        return String.format("%s/animelist/%s", this.BaseUrl, this.User);
     }
 }

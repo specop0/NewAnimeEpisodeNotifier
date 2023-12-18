@@ -4,8 +4,8 @@ import org.json.JSONObject;
 
 public class Reporter extends RestBase implements IReporter {
 
-    public Reporter(int port) {
-        this(String.format("http://localhost:%d/mail/send", port));
+    public Reporter(String ipAddress, int port) {
+        this(String.format("http://%s:%d/mail/send", ipAddress, port));
     }
 
     public Reporter(String url) {

@@ -1,0 +1,19 @@
+services:
+  newanimeeposidenotifier:
+    build:
+      context: .
+    volumes:
+      - ./mnt:/mnt:ro
+    user: "33:33"
+    read_only: true
+    networks:
+      - localrestserver
+      - mailrestserver
+
+networks:
+  localrestserver:
+    name: localrestserver
+    external: true
+  mailrestserver:
+    name: mailrestserver
+    external: true

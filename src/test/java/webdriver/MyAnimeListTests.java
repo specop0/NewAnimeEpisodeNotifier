@@ -40,7 +40,7 @@ public class MyAnimeListTests {
         });
 
         // substitue URL via Spark to return known HTML page
-        MyAnimeList testee = new MyAnimeList("", baseUrl);
+        MyAnimeList testee = new MyAnimeList(baseUrl);
         spark.Spark.get("/anime/season", (rqst, rspns) -> page);
         spark.Spark.awaitInitialization();
 

@@ -77,7 +77,7 @@ public class GogoanimeTests {
                 Assert.assertEquals(expectedEpisode.GetUrl(), actualEpisode.GetUrl());
                 Assert.assertEquals(expectedEpisode.GetName(), actualEpisode.GetName());
                 Assert.assertEquals(expectedEpisode.GetEpisode(), actualEpisode.GetEpisode());
-                
+
                 Assert.assertEquals(expectedEpisode, actualEpisode);
                 Assert.assertEquals(expectedEpisode.toString(), actualEpisode.toString());
             }
