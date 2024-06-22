@@ -7,13 +7,9 @@ services:
     user: "33:33"
     read_only: true
     networks:
-      - localrestserver
-      - mailrestserver
+      - main
 
 networks:
-  localrestserver:
-    name: localrestserver
-    external: true
-  mailrestserver:
-    name: mailrestserver
+  main:
+    name: main
     external: true
